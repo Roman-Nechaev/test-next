@@ -5,7 +5,7 @@ export default function ({ user }) {
   const { query } = useRouter();
 
   return (
-    <MainContainer keywords={user.id}>
+    <MainContainer>
       <h1>Пользователь c id {query.id}</h1>
       <p>Имя пользователя {user.name}</p>
     </MainContainer>
