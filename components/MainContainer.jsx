@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { NavBar } from "./MainContainer.styled";
 
 import A from "./A";
 
@@ -9,10 +10,10 @@ const MainContainer = ({ children, keywords }) => {
         <meta keywords={"studying next" + keywords} />
         <title>Главная</title>
       </Head>
-      <div>
+      <NavBar>
         <A href="/" text="Главная" />
         <A href="/users" text="Пользователи" />
-      </div>
+      </NavBar>
       <div>{children}</div>
     </>
   );
